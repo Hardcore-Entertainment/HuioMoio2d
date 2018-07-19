@@ -1,4 +1,4 @@
-﻿Log file open, 07/18/18 23:41:09
+﻿Log file open, 07/19/18 10:32:38
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -7,12 +7,12 @@ LogWindows: Failed to load 'VtuneApi32e.dll' (GetLastError=126)
 LogWindows: File 'VtuneApi32e.dll' does not exist
 LogInit: Display: Running engine for game: HuioMoioProject
 LogPlatformFile: Not using cached read wrapper
-LogInit: Display: RandInit(-1633416188) SRandInit(-1633416188).
+LogInit: Display: RandInit(-684984283) SRandInit(-684984283).
 LogInit: Read version file with build ID '3944462'
 LogInit: Overriding engine version to CL 4033788, compatible CL 3944462
 LogInit: Registered custom module enumerator with build ID '3944462'
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.265349
+LogStats: Stats thread started at 0.266785
 LogD3D11RHI: Aftermath initialized
 LogICUInternationalization: Display: ICU TimeZone Detection - Raw Offset: +3:00, Platform Override: ''
 LogModuleManager: Display: Found up-to-date module file ../../../Engine/Plugins/2D/Paper2D/Binaries/Win64/UE4Editor-Paper2D.dll (API version 3944462).
@@ -168,7 +168,7 @@ LogPluginManager: Mounting plugin ProceduralMeshComponent
 LogPluginManager: Mounting plugin RuntimePhysXCooking
 LogPluginManager: Mounting plugin SteamVR
 LogPluginManager: Mounting plugin WindowsMoviePlayer
-LogStreaming: Display: Took  0.910s to configure plugins.
+LogStreaming: Display: Took  0.732s to configure plugins.
 LogInit: Using libcurl 7.47.1
 LogInit:  - built for x86_64-pc-win32
 LogInit:  - supports SSL with OpenSSL/1.0.2g
@@ -222,218 +222,851 @@ LogInit: Installed Engine Build: 1
 LogStreaming: Display: Took  0.000s to delete old logs.
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2018.07.18-20.41.11:127][  0]LogInit: Selected Device Profile: [Windows]
-[2018.07.18-20.41.11:127][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2018.07.18-20.41.11:175][  0]LogInit: Computer: DESKTOP-3NVEQS8
-[2018.07.18-20.41.11:175][  0]LogInit: User: Majestic
-[2018.07.18-20.41.11:175][  0]LogInit: CPU Page size=4096, Cores=4
-[2018.07.18-20.41.11:175][  0]LogInit: High frequency timer resolution =3.320324 MHz
-[2018.07.18-20.41.11:176][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2018.07.18-20.41.11:176][  0]LogMemory: Platform Memory Stats for Windows
-[2018.07.18-20.41.11:176][  0]LogMemory: Process Physical Memory: 276.52 MB used, 276.52 MB peak
-[2018.07.18-20.41.11:176][  0]LogMemory: Process Virtual Memory: 269.03 MB used, 269.03 MB peak
-[2018.07.18-20.41.11:176][  0]LogMemory: Physical Memory: 3801.89 MB used,  12510.06 MB free, 16311.96 MB total
-[2018.07.18-20.41.11:176][  0]LogMemory: Virtual Memory: 4797.35 MB used,  12510.06 MB free, 134217728.00 MB total
-[2018.07.18-20.41.11:317][  0]LogInit: Using OS detected language (ru-RU).
-[2018.07.18-20.41.11:317][  0]LogInit: Using OS detected locale (ru-RU).
-[2018.07.18-20.41.11:404][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the language.
-[2018.07.18-20.41.12:073][  0]LogStreaming: Display: Took  0.756s to EndInitTextLocalization.
-[2018.07.18-20.41.12:253][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2018.07.18-20.41.12:253][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2018.07.18-20.41.12:539][  0]LogD3D11RHI: D3D11 adapters:
-[2018.07.18-20.41.12:584][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
-[2018.07.18-20.41.12:584][  0]LogD3D11RHI:       8088/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2018.07.18-20.41.12:586][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2018.07.18-20.41.12:586][  0]LogD3D11RHI:       0/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2018.07.18-20.41.12:586][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2018.07.18-20.41.12:590][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2018.07.18-20.41.12:590][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
-[2018.07.18-20.41.12:590][  0]LogWindows: EnumDisplayDevices:
-[2018.07.18-20.41.12:590][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
-[2018.07.18-20.41.12:590][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2018.07.18-20.41.12:590][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2018.07.18-20.41.12:590][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
-[2018.07.18-20.41.12:590][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
-[2018.07.18-20.41.12:590][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
-[2018.07.18-20.41.12:590][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
-[2018.07.18-20.41.12:590][  0]LogD3D11RHI:      Driver Date: Unknown
-[2018.07.18-20.41.12:590][  0]LogRHI: Texture pool is 5661 MB (70% of 8088 MB)
-[2018.07.18-20.41.12:613][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
-[2018.07.18-20.41.12:613][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
-[2018.07.18-20.41.12:613][  0]LogD3D11RHI: Async texture creation enabled
-[2018.07.18-20.41.12:630][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
-[2018.07.18-20.41.12:678][  0]LogShaderCompilers: Guid format shader working directory is 0 characters bigger than the processId version (../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Intermediate/Shaders/WorkingDirectory/6544/).
-[2018.07.18-20.41.12:678][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Majestic/AppData/Local/Temp/UnrealShaderWorkingDir/757535E74BFA9A49129807A705B404D6/'.
-[2018.07.18-20.41.13:572][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
-[2018.07.18-20.41.13:583][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
-[2018.07.18-20.41.13:593][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
-[2018.07.18-20.41.13:604][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
-[2018.07.18-20.41.13:623][  0]LogTemp: Display: Loaded TP MacTargetPlatform
-[2018.07.18-20.41.13:634][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
-[2018.07.18-20.41.13:645][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
-[2018.07.18-20.41.13:656][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
-[2018.07.18-20.41.13:661][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
-[2018.07.18-20.41.13:671][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
-[2018.07.18-20.41.13:681][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
-[2018.07.18-20.41.13:691][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
-[2018.07.18-20.41.13:701][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
-[2018.07.18-20.41.13:711][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
-[2018.07.18-20.41.13:721][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
-[2018.07.18-20.41.13:741][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
-[2018.07.18-20.41.13:741][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
-[2018.07.18-20.41.13:757][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
-[2018.07.18-20.41.13:761][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
-[2018.07.18-20.41.13:805][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
-[2018.07.18-20.41.13:815][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
-[2018.07.18-20.41.13:826][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
-[2018.07.18-20.41.13:836][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
-[2018.07.18-20.41.13:846][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
-[2018.07.18-20.41.13:864][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
-[2018.07.18-20.41.13:865][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2018.07.18-20.41.14:188][  0]LogXGEController: Cleaning working directory: C:/Users/Majestic/AppData/Local/Temp/UnrealXGEWorkingDir/
-[2018.07.18-20.41.14:188][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2018.07.18-20.41.14:188][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2018.07.18-20.41.14:188][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2018.07.18-20.41.15:298][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2018.07.18-20.41.15:880][  0]LogDerivedDataCache: Loaded boot cache 0.58s 74MB C:/Users/Majestic/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
-[2018.07.18-20.41.15:880][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Majestic/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
-[2018.07.18-20.41.15:880][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2018.07.18-20.41.15:880][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2018.07.18-20.41.15:880][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2018.07.18-20.41.15:880][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2018.07.18-20.41.15:997][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2018.07.18-20.41.16:010][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Majestic/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2018.07.18-20.41.16:010][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2018.07.18-20.41.16:010][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2018.07.18-20.41.16:022][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2018.07.18-20.41.16:022][  0]LogSlate: Using Freetype 2.6.0
-[2018.07.18-20.41.16:049][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.07.18-20.41.16:049][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2018.07.18-20.41.17:886][  0]LogAssetRegistry: FAssetRegistry took 0.0256 seconds to start up
-[2018.07.18-20.41.18:245][  0]LogInit: Selected Device Profile: [Windows]
-[2018.07.18-20.41.19:330][  0]LogSimplygon: Simplygon DLL not present - disabling.
-[2018.07.18-20.41.19:333][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
-[2018.07.18-20.41.19:333][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2018.07.18-20.41.19:333][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
-[2018.07.18-20.41.19:333][  0]LogMeshReduction: No automatic mesh merging module available
-[2018.07.18-20.41.19:333][  0]LogMeshMerging: No automatic mesh merging module available
-[2018.07.18-20.41.19:357][  0]LogNetVersion: HuioMoioProject , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 931987401)
-[2018.07.18-20.41.20:940][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 1 prioritized culture(s) in 0.039907 seconds
-[2018.07.18-20.41.20:945][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
-[2018.07.18-20.41.20:945][  0]LogUObjectAllocator: 7314304 out of 0 bytes used by permanent object pool.
-[2018.07.18-20.41.20:945][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2018.07.18-20.41.37:049][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2018.07.18-20.41.37:071][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2018.07.18-20.41.37:544][  0]SourceControl: Source control is disabled
-[2018.07.18-20.41.37:544][  0]SourceControl: Source control is disabled
-[2018.07.18-20.41.37:564][  0]SourceControl: Source control is disabled
-[2018.07.18-20.41.37:578][  0]SourceControl: Source control is disabled
-[2018.07.18-20.41.38:254][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2018.07.18-20.41.38:354][  0]LogOcInput: OculusInput pre-init called
-[2018.07.18-20.41.38:478][  0]LogEngine: Initializing Engine...
-[2018.07.18-20.41.38:479][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2018.07.18-20.41.38:480][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.07.18-20.41.38:480][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.07.18-20.41.38:750][  0]LogAIModule: Creating AISystem for world Untitled
-[2018.07.18-20.41.38:756][  0]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
-[2018.07.18-20.41.38:766][  0]LogInit: FAudioDevice initialized.
-[2018.07.18-20.41.38:919][  0]LogDerivedDataCache: Saved boot cache 0.15s 74MB C:/Users/Majestic/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
-[2018.07.18-20.41.38:932][  0]LogInit: Texture streaming: Enabled
-[2018.07.18-20.41.38:965][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2018.07.18-20.41.38:965][  0]LogEngineSessionManager: EngineSessionManager sent abnormal shutdown report. Type=AbnormalShutdown, SessionId={1CCC8729-48CC-D455-9981-ED9E80649CA4}
-[2018.07.18-20.41.38:986][  0]LogInit: Transaction tracking system initialized
-[2018.07.18-20.41.39:002][  0]BlueprintLog: New page: Editor Load
-[2018.07.18-20.41.39:083][  0]LocalizationService: Localization service is disabled
-[2018.07.18-20.41.39:244][  0]LogConsoleResponse: Display: 
-[2018.07.18-20.41.41:274][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2018.07.18-20.41.41:274][  0]LogCook: Display: Mobile HDR setting 1
-[2018.07.18-20.41.41:274][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Content/' took 0.01s
-[2018.07.18-20.41.41:274][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
-[2018.07.18-20.41.41:274][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
-[2018.07.18-20.41.41:274][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
-[2018.07.18-20.41.42:340][  0]SourceControl: Source control is disabled
-[2018.07.18-20.41.42:340][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.07.18-20.41.42:352][  0]LightingResults: New page: Lighting Build
-[2018.07.18-20.41.42:354][  0]MapCheck: New page: Map Check
-[2018.07.18-20.41.42:354][  0]LightingResults: New page: Lighting Build
-[2018.07.18-20.41.42:718][  0]LogAIModule: Creating AISystem for world Untitled_1
-[2018.07.18-20.41.42:730][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.07.18-20.41.42:741][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.07.18-20.41.42:776][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 35,037ms to complete.
-[2018.07.18-20.41.42:776][  0]LogFileHelpers: Loading map 'Template_Default' took 0.436
-[2018.07.18-20.41.42:894][  0]LogCollectionManager: Loaded 0 collections in 0.000839 seconds
-[2018.07.18-20.41.42:935][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Saved/Collections/' took 0.01s
-[2018.07.18-20.41.42:935][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Content/Developers/Majestic/Collections/' took 0.01s
-[2018.07.18-20.41.42:935][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Content/Collections/' took 0.01s
-[2018.07.18-20.41.42:935][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2018.07.18-20.41.42:944][  0]LogContentBrowser: Native class hierarchy populated in 0.0093 seconds. Added 2452 classes and 558 folders.
-[2018.07.18-20.41.42:950][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.07.18-20.41.43:981][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
-[2018.07.18-20.41.44:047][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2018.07.18-20.41.44:076][  0]LogSlate: Took 0.011083 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2018.07.18-20.41.44:097][  0]LogSlate: Took 0.018811 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2018.07.18-20.41.44:107][  0]LogSlate: Took 0.008732 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2018.07.18-20.41.44:234][  0]LogRenderer: Reallocating scene render targets to support 940x712 Format 10 NumSamples 1 (Frame:1).
-[2018.07.18-20.41.44:359][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
-[2018.07.18-20.41.44:359][  0]LogLoad: (Engine Initialization) Total time: 38.93 seconds
-[2018.07.18-20.41.44:359][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2018.07.18-20.41.44:717][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2018.07.18-20.41.44:768][  0]LogSlate: Took 0.022130 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.07.18-20.41.45:040][  1]LogAssetRegistry: Asset discovery search completed in 27.1764 seconds
-[2018.07.18-20.41.45:063][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2018.07.18-20.41.45:063][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000075 seconds (updated 0 objects)
-[2018.07.18-20.41.51:279][616]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.07.18-20.41.57:761][391]LogLinker: Warning: Can't find file '/Game/Untitled_BuiltData'
-[2018.07.18-20.41.57:761][391]LogLinker: Warning: Can't find file for asset '/Game/Untitled_BuiltData' while loading ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Untitled.umap.
-[2018.07.18-20.41.57:761][391]LoadErrors: Error: /Game/Untitled : Can't find file for asset. /Game/Untitled_BuiltData
-[2018.07.18-20.41.57:761][391]LogLinker: Warning: Can't find file '/Game/Untitled_BuiltData'
-[2018.07.18-20.41.57:761][391]LogLinker: Warning: Can't find file for asset '/Game/Untitled_BuiltData' while loading ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Untitled.umap.
-[2018.07.18-20.41.57:762][391]LogLinker: Warning: Can't find file '/Game/Untitled_BuiltData'
-[2018.07.18-20.41.57:763][391]LoadErrors: Failed to load /Game/Untitled_BuiltData.Untitled_BuiltData Referenced by PersistentLevel
-[2018.07.18-20.41.57:763][391]LogLinker: Warning: Can't find file for asset '/Game/Untitled_BuiltData' while loading NULL.
-[2018.07.18-20.41.57:763][391]LogAIModule: Creating AISystem for world Untitled
-[2018.07.18-20.41.58:802][391]LogSlate: Window 'Delete Assets' being destroyed
-[2018.07.18-20.41.58:808][391]LogSlate: Took 0.000186 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2018.07.18-20.42.00:473][577]LogAIModule: Creating AISystem for world DefaultLevel
-[2018.07.18-20.42.00:487][577]Cmd: MAP LOAD FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2018.07.18-20.42.00:487][577]LightingResults: New page: Lighting Build
-[2018.07.18-20.42.00:488][577]LoadErrors: New page: Loading map: DefaultLevel.umap
-[2018.07.18-20.42.00:488][577]MapCheck: New page: Map Check
-[2018.07.18-20.42.00:488][577]LightingResults: New page: Lighting Build
-[2018.07.18-20.42.00:499][577]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2018.07.18-20.42.00:512][577]Cmd: MAP CHECKDEP NOCLEARLOG
-[2018.07.18-20.42.00:544][577]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 31,719ms to complete.
-[2018.07.18-20.42.00:544][577]LogFileHelpers: Loading map 'DefaultLevel' took 0.058
-[2018.07.18-20.42.09:583][635]LogRenderer: Reallocating scene render targets to support 944x732 Format 10 NumSamples 1 (Frame:651).
-[2018.07.18-20.42.11:100][816]LogSlate: Window 'Widget Reflector' being destroyed
-[2018.07.18-20.42.11:103][816]LogSlate: Window 'Widget Reflector' being destroyed
-[2018.07.18-20.42.22:867][220]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2018.07.18-20.47.18:134][300]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.07.18-21.12.48:276][904]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.07.18-21.12.48:276][904]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2018.07.18-21.30.03:439][834]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2018.07.18-22.01.42:477][807]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\UEstaff\Textures\Base Ground Color.png)
-[2018.07.18-22.01.42:513][807]LogTexture: Display: Building textures: Base_Ground_Color (AutoDXT, 32X32)
-[2018.07.18-22.01.42:600][807]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\UEstaff\Textures\Base House Floor.png)
-[2018.07.18-22.01.42:603][807]LogTexture: Display: Building textures: Base_House_Floor (AutoDXT, 32X32)
-[2018.07.18-22.01.42:607][807]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\UEstaff\Textures\DestructableObject.png)
-[2018.07.18-22.01.42:610][807]LogTexture: Display: Building textures: DestructableObject (AutoDXT, 8X8)
-[2018.07.18-22.01.42:616][807]LogFactory: FactoryCreateFile: Texture with ReimportTextureFactory (0 0 D:\UEstaff\Textures\Walls.png)
-[2018.07.18-22.01.42:618][807]LogTexture: Display: Building textures: Walls (AutoDXT, 8X8)
-[2018.07.18-22.01.48:184][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Base_Ground_Color" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color.uasset" SILENT=true
-[2018.07.18-22.01.48:197][460]LogSavePackage: Save=12.00ms
-[2018.07.18-22.01.48:197][460]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_Ground_Color2E2254A54C65D3294FF908A749424394.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color.uasset'
-[2018.07.18-22.01.48:198][460]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color.uasset
-[2018.07.18-22.01.48:203][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Base_House_Floor" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor.uasset" SILENT=true
-[2018.07.18-22.01.48:205][460]LogSavePackage: Save=1.14ms
-[2018.07.18-22.01.48:205][460]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_House_FloorC233DA774434AB30102DD89FDE549612.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor.uasset'
-[2018.07.18-22.01.48:205][460]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor.uasset
-[2018.07.18-22.01.48:210][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/DestructableObject" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject.uasset" SILENT=true
-[2018.07.18-22.01.48:212][460]LogSavePackage: Save=1.09ms
-[2018.07.18-22.01.48:212][460]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DestructableObject5BCA64774D7F19A31CDC8A9CFBE717E7.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject.uasset'
-[2018.07.18-22.01.48:213][460]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject.uasset
-[2018.07.18-22.01.48:215][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Walls" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls.uasset" SILENT=true
-[2018.07.18-22.01.48:217][460]LogSavePackage: Save=1.12ms
-[2018.07.18-22.01.48:217][460]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Walls448618414D8BB0CEC3764E99C3388698.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls.uasset'
-[2018.07.18-22.01.48:217][460]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls.uasset
-[2018.07.18-22.01.55:303][232]LogSlate: Window 'Source Control Login' being destroyed
+[2018.07.19-07.32.39:572][  0]LogInit: Selected Device Profile: [Windows]
+[2018.07.19-07.32.39:572][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.07.19-07.32.39:626][  0]LogInit: Computer: DESKTOP-3NVEQS8
+[2018.07.19-07.32.39:626][  0]LogInit: User: Majestic
+[2018.07.19-07.32.39:626][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.07.19-07.32.39:626][  0]LogInit: High frequency timer resolution =3.320324 MHz
+[2018.07.19-07.32.39:627][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.07.19-07.32.39:627][  0]LogMemory: Platform Memory Stats for Windows
+[2018.07.19-07.32.39:627][  0]LogMemory: Process Physical Memory: 276.93 MB used, 276.93 MB peak
+[2018.07.19-07.32.39:627][  0]LogMemory: Process Virtual Memory: 268.98 MB used, 268.98 MB peak
+[2018.07.19-07.32.39:627][  0]LogMemory: Physical Memory: 3199.09 MB used,  13112.87 MB free, 16311.96 MB total
+[2018.07.19-07.32.39:627][  0]LogMemory: Virtual Memory: 4797.35 MB used,  13112.87 MB free, 134217728.00 MB total
+[2018.07.19-07.32.39:787][  0]LogInit: Using OS detected language (ru-RU).
+[2018.07.19-07.32.39:787][  0]LogInit: Using OS detected locale (ru-RU).
+[2018.07.19-07.32.39:892][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the language.
+[2018.07.19-07.32.41:146][  0]LogStreaming: Display: Took  1.360s to EndInitTextLocalization.
+[2018.07.19-07.32.41:464][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2018.07.19-07.32.41:464][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2018.07.19-07.32.41:807][  0]LogD3D11RHI: D3D11 adapters:
+[2018.07.19-07.32.41:850][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2018.07.19-07.32.41:850][  0]LogD3D11RHI:       8088/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2018.07.19-07.32.41:852][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.07.19-07.32.41:853][  0]LogD3D11RHI:       0/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.07.19-07.32.41:853][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.07.19-07.32.41:857][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.07.19-07.32.41:857][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2018.07.19-07.32.41:857][  0]LogWindows: EnumDisplayDevices:
+[2018.07.19-07.32.41:857][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2018.07.19-07.32.41:857][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2018.07.19-07.32.41:857][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2018.07.19-07.32.41:857][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2018.07.19-07.32.41:858][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.07.19-07.32.41:858][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2018.07.19-07.32.41:858][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.07.19-07.32.41:858][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.07.19-07.32.41:858][  0]LogRHI: Texture pool is 5661 MB (70% of 8088 MB)
+[2018.07.19-07.32.41:880][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
+[2018.07.19-07.32.41:880][  0]LogD3D11RHI: [Aftermath] Aftermath enabled and primed
+[2018.07.19-07.32.41:880][  0]LogD3D11RHI: Async texture creation enabled
+[2018.07.19-07.32.41:896][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2018.07.19-07.32.41:945][  0]LogShaderCompilers: Guid format shader working directory is 0 characters bigger than the processId version (../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Intermediate/Shaders/WorkingDirectory/6524/).
+[2018.07.19-07.32.41:946][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Majestic/AppData/Local/Temp/UnrealShaderWorkingDir/8364D7274813A3E3F9F38698B6A145F5/'.
+[2018.07.19-07.32.43:090][  0]LogTemp: Display: Loaded TP AllDesktopTargetPlatform
+[2018.07.19-07.32.43:103][  0]LogTemp: Display: Loaded TP MacClientTargetPlatform
+[2018.07.19-07.32.43:117][  0]LogTemp: Display: Loaded TP MacNoEditorTargetPlatform
+[2018.07.19-07.32.43:131][  0]LogTemp: Display: Loaded TP MacServerTargetPlatform
+[2018.07.19-07.32.43:150][  0]LogTemp: Display: Loaded TP MacTargetPlatform
+[2018.07.19-07.32.43:164][  0]LogTemp: Display: Loaded TP WindowsClientTargetPlatform
+[2018.07.19-07.32.43:178][  0]LogTemp: Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.07.19-07.32.43:190][  0]LogTemp: Display: Loaded TP WindowsServerTargetPlatform
+[2018.07.19-07.32.43:196][  0]LogTemp: Display: Loaded TP WindowsTargetPlatform
+[2018.07.19-07.32.43:207][  0]LogTemp: Display: Loaded TP Android_ASTCTargetPlatform
+[2018.07.19-07.32.43:219][  0]LogTemp: Display: Loaded TP Android_ATCTargetPlatform
+[2018.07.19-07.32.43:233][  0]LogTemp: Display: Loaded TP Android_DXTTargetPlatform
+[2018.07.19-07.32.43:243][  0]LogTemp: Display: Loaded TP Android_ETC1aTargetPlatform
+[2018.07.19-07.32.43:254][  0]LogTemp: Display: Loaded TP Android_ETC1TargetPlatform
+[2018.07.19-07.32.43:265][  0]LogTemp: Display: Loaded TP Android_ETC2TargetPlatform
+[2018.07.19-07.32.43:287][  0]LogTemp: Display: Loaded TP Android_MultiTargetPlatform
+[2018.07.19-07.32.43:287][  0]LogTemp: Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.07.19-07.32.43:300][  0]LogTemp: Display: Loaded TP AndroidTargetPlatform
+[2018.07.19-07.32.43:301][  0]LogTemp: Display: Loaded TP HTML5TargetPlatform
+[2018.07.19-07.32.43:339][  0]LogTemp: Display: Loaded TP IOSTargetPlatform
+[2018.07.19-07.32.43:350][  0]LogTemp: Display: Loaded TP TVOSTargetPlatform
+[2018.07.19-07.32.43:361][  0]LogTemp: Display: Loaded TP LinuxClientTargetPlatform
+[2018.07.19-07.32.43:371][  0]LogTemp: Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.07.19-07.32.43:382][  0]LogTemp: Display: Loaded TP LinuxServerTargetPlatform
+[2018.07.19-07.32.43:399][  0]LogTemp: Display: Loaded TP LinuxTargetPlatform
+[2018.07.19-07.32.43:399][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2018.07.19-07.32.43:681][  0]LogXGEController: Cleaning working directory: C:/Users/Majestic/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2018.07.19-07.32.43:682][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2018.07.19-07.32.43:682][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2018.07.19-07.32.43:682][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2018.07.19-07.32.44:991][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2018.07.19-07.32.45:577][  0]LogDerivedDataCache: Loaded boot cache 0.59s 74MB C:/Users/Majestic/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2018.07.19-07.32.45:578][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Majestic/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc
+[2018.07.19-07.32.45:578][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.19-07.32.45:578][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.07.19-07.32.45:578][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.07.19-07.32.45:578][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.07.19-07.32.45:674][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.07.19-07.32.45:687][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Majestic/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.07.19-07.32.45:687][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2018.07.19-07.32.45:687][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2018.07.19-07.32.45:727][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.07.19-07.32.45:727][  0]LogSlate: Using Freetype 2.6.0
+[2018.07.19-07.32.45:759][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.07.19-07.32.45:759][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.07.19-07.32.47:963][  0]LogAssetRegistry: FAssetRegistry took 0.0267 seconds to start up
+[2018.07.19-07.32.48:320][  0]LogInit: Selected Device Profile: [Windows]
+[2018.07.19-07.32.49:383][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.07.19-07.32.49:388][  0]LogMeshReduction: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.07.19-07.32.49:388][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.07.19-07.32.49:388][  0]LogMeshReduction: No automatic skeletal mesh reduction module available
+[2018.07.19-07.32.49:388][  0]LogMeshReduction: No automatic mesh merging module available
+[2018.07.19-07.32.49:389][  0]LogMeshMerging: No automatic mesh merging module available
+[2018.07.19-07.32.49:526][  0]LogNetVersion: HuioMoioProject , NetCL: 3944462, EngineNetVer: 2, GameNetVer: 0 (Checksum: 931987401)
+[2018.07.19-07.32.51:524][  0]LogPackageLocalizationCache: Processed 9 localized package path(s) for 1 prioritized culture(s) in 0.042856 seconds
+[2018.07.19-07.32.51:530][  0]LogUObjectArray: 36728 objects as part of root set at end of initial load.
+[2018.07.19-07.32.51:530][  0]LogUObjectAllocator: 7314312 out of 0 bytes used by permanent object pool.
+[2018.07.19-07.32.51:530][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.07.19-07.33.11:930][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.07.19-07.33.11:952][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.07.19-07.33.12:512][  0]SourceControl: Source control is disabled
+[2018.07.19-07.33.12:512][  0]SourceControl: Source control is disabled
+[2018.07.19-07.33.12:532][  0]SourceControl: Source control is disabled
+[2018.07.19-07.33.12:552][  0]SourceControl: Source control is disabled
+[2018.07.19-07.33.13:200][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.07.19-07.33.13:313][  0]LogOcInput: OculusInput pre-init called
+[2018.07.19-07.33.13:441][  0]LogEngine: Initializing Engine...
+[2018.07.19-07.33.13:443][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.07.19-07.33.13:444][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.19-07.33.13:444][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.19-07.33.13:723][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.07.19-07.33.13:729][  0]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2018.07.19-07.33.13:758][  0]LogInit: FAudioDevice initialized.
+[2018.07.19-07.33.13:891][  0]LogDerivedDataCache: Saved boot cache 0.13s 74MB C:/Users/Majestic/AppData/Local/UnrealEngine/4.19/DerivedDataCache/Boot.ddc.
+[2018.07.19-07.33.13:906][  0]LogInit: Texture streaming: Enabled
+[2018.07.19-07.33.13:941][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.07.19-07.33.13:970][  0]LogInit: Transaction tracking system initialized
+[2018.07.19-07.33.13:997][  0]BlueprintLog: New page: Editor Load
+[2018.07.19-07.33.14:112][  0]LocalizationService: Localization service is disabled
+[2018.07.19-07.33.14:246][  0]LogConsoleResponse: Display: 
+[2018.07.19-07.33.16:382][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.07.19-07.33.16:383][  0]LogCook: Display: Mobile HDR setting 1
+[2018.07.19-07.33.16:383][  0]LogGameplayTags: Display: UGameplayTagsManager::DoneAddingNativeTags. DelegateIsBound: 0
+[2018.07.19-07.33.16:383][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.19-07.33.16:383][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.19-07.33.16:781][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Content/' took 0.02s
+[2018.07.19-07.33.17:288][  0]SourceControl: Source control is disabled
+[2018.07.19-07.33.17:288][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.19-07.33.17:303][  0]LightingResults: New page: Lighting Build
+[2018.07.19-07.33.17:308][  0]MapCheck: New page: Map Check
+[2018.07.19-07.33.17:308][  0]LightingResults: New page: Lighting Build
+[2018.07.19-07.33.17:862][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2018.07.19-07.33.17:879][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.19-07.33.17:907][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.19-07.33.17:955][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 46,877ms to complete.
+[2018.07.19-07.33.17:955][  0]LogFileHelpers: Loading map 'Template_Default' took 0.666
+[2018.07.19-07.33.18:044][  0]LogCollectionManager: Loaded 0 collections in 0.000824 seconds
+[2018.07.19-07.33.18:083][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Saved/Collections/' took 0.01s
+[2018.07.19-07.33.18:083][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Content/Developers/Majestic/Collections/' took 0.01s
+[2018.07.19-07.33.18:083][  0]LogFileCache: Scanning file cache for directory 'D:/UEstaff/HuioMoio2d/HuioMoioProject/Content/Collections/' took 0.01s
+[2018.07.19-07.33.18:083][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
+[2018.07.19-07.33.18:092][  0]LogContentBrowser: Native class hierarchy populated in 0.0089 seconds. Added 2452 classes and 558 folders.
+[2018.07.19-07.33.18:097][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.07.19-07.33.19:183][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2018.07.19-07.33.19:361][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2018.07.19-07.33.19:402][  0]LogSlate: Took 0.017252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.19-07.33.19:424][  0]LogSlate: Took 0.017008 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.07.19-07.33.19:434][  0]LogSlate: Took 0.008998 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.07.19-07.33.19:523][  0]LogRenderer: Reallocating scene render targets to support 940x712 Format 10 NumSamples 1 (Frame:1).
+[2018.07.19-07.33.19:651][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0002 seconds. Added 0 classes and 0 folders.
+[2018.07.19-07.33.19:651][  0]LogLoad: (Engine Initialization) Total time: 47.82 seconds
+[2018.07.19-07.33.19:651][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2018.07.19-07.33.20:009][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2018.07.19-07.33.20:333][  1]LogAssetRegistry: Asset discovery search completed in 32.3927 seconds
+[2018.07.19-07.33.20:335][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.07.19-07.33.20:335][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000051 seconds (updated 0 objects)
+[2018.07.19-07.34.08:914][444]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.34.20:966][824]LogSlate: Took 0.015910 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.07.19-07.34.20:981][824]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/DestructableObject" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject.uasset" SILENT=true
+[2018.07.19-07.34.20:991][824]LogSavePackage: Save=1.73ms
+[2018.07.19-07.34.20:991][824]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DestructableObject130B094B4EBA7EE1F868B4AE562DB4E9.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject.uasset'
+[2018.07.19-07.34.21:005][824]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject.uasset
+[2018.07.19-07.34.21:013][824]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Walls" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls.uasset" SILENT=true
+[2018.07.19-07.34.21:015][824]LogSavePackage: Save=1.44ms
+[2018.07.19-07.34.21:016][824]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Walls19D5AD594B7B3B0CC083DEA104EAB7C5.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls.uasset'
+[2018.07.19-07.34.21:016][824]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls.uasset
+[2018.07.19-07.34.21:021][824]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Base_Ground_Color" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color.uasset" SILENT=true
+[2018.07.19-07.34.21:024][824]LogSavePackage: Save=1.47ms
+[2018.07.19-07.34.21:024][824]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_Ground_ColorEE2876A04F88597565F4C899AF5582F8.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color.uasset'
+[2018.07.19-07.34.21:063][824]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color.uasset
+[2018.07.19-07.34.21:074][824]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Base_House_Floor" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor.uasset" SILENT=true
+[2018.07.19-07.34.21:079][824]LogSavePackage: Save=2.88ms
+[2018.07.19-07.34.21:079][824]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_House_Floor9C1ADE88411DA07D4C6DC889A5377EA4.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor.uasset'
+[2018.07.19-07.34.21:081][824]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor.uasset
+[2018.07.19-07.34.35:006][391]LogSlate: Took 0.000141 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2018.07.19-07.34.35:046][392]LogRenderer: Reallocating scene render targets to support 944x732 Format 10 NumSamples 1 (Frame:1663).
+[2018.07.19-07.34.36:571][574]LogSlate: Window 'Widget Reflector' being destroyed
+[2018.07.19-07.34.36:574][574]LogSlate: Window 'Widget Reflector' being destroyed
+[2018.07.19-07.34.45:241][587]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.34.49:404][ 82]LogAIModule: Creating AISystem for world DefaultLevel
+[2018.07.19-07.34.49:418][ 82]Cmd: MAP LOAD FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.19-07.34.49:418][ 82]LightingResults: New page: Lighting Build
+[2018.07.19-07.34.49:419][ 82]LoadErrors: New page: Loading map: DefaultLevel.umap
+[2018.07.19-07.34.49:420][ 82]MapCheck: New page: Map Check
+[2018.07.19-07.34.49:420][ 82]LightingResults: New page: Lighting Build
+[2018.07.19-07.34.49:506][ 82]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.19-07.34.49:525][ 82]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.19-07.34.49:556][ 82]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 30,586ms to complete.
+[2018.07.19-07.34.49:556][ 82]LogFileHelpers: Loading map 'DefaultLevel' took 0.138
+[2018.07.19-07.35.06:675][685]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2018.07.19-07.35.07:521][688]LogTemp: Executing iPhonePackager certificates Engine -bundlename com.YourCompany.HuioMoioProject
+[2018.07.19-07.35.07:521][688]LogTemp: CWD: D:\UnrealEngine\UE_4.19\Engine\Binaries\DotNET\IOS
+[2018.07.19-07.35.07:521][688]LogTemp: Initial Dir: D:\UnrealEngine\UE_4.19
+[2018.07.19-07.35.07:521][688]LogTemp: Env CWD: D:\UnrealEngine\UE_4.19\Engine\Binaries\DotNET\IOS
+[2018.07.19-07.35.07:521][688]LogTemp: BranchPath = DESKTOP-3NVEQS8/D/UnrealEngine/UE_4.19/Engine/Binaries --- GameBranchPath = DESKTOP-3NVEQS8/D/UnrealEngine/UE_4.19/Engine/Binaries
+[2018.07.19-07.35.07:761][688]LogTemp: IPP ERROR: Could not find provision directory 'C:\Users\Majestic\AppData\Local/Apple Computer/MobileDevice/Provisioning Profiles/'.
+[2018.07.19-07.35.09:939][922]LogSlate: Window 'Project Settings' being destroyed
+[2018.07.19-07.35.09:945][923]LogRenderer: Reallocating scene render targets to support 1180x916 Format 10 NumSamples 1 (Frame:1067).
+[2018.07.19-07.37.10:285][153]LogSlate: Took 0.019075 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2018.07.19-07.37.12:019][319]LogSlate: Window 'Base_Ground_Color_TileSet*' being destroyed
+[2018.07.19-07.37.22:295][550]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.37.26:344][ 32]LogSavePackage: Save=3.48ms
+[2018.07.19-07.37.26:344][ 32]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_Ground_Color_TileSetA5F1D655400928DC3A8CCE9E0A981738.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color_TileSet.uasset'
+[2018.07.19-07.37.26:345][ 32]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_Ground_Color_TileSet.uasset
+[2018.07.19-07.37.35:500][ 76]LogSavePackage: Save=3.20ms
+[2018.07.19-07.37.35:500][ 76]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_House_Floor_TileSet460E7AA342B9B5FC5D414FA95D57522E.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor_TileSet.uasset'
+[2018.07.19-07.37.35:501][ 76]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Base_House_Floor_TileSet.uasset
+[2018.07.19-07.37.36:517][197]LogSlate: Window 'Base_House_Floor_TileSet' being destroyed
+[2018.07.19-07.37.40:354][611]LogSavePackage: Save=2.81ms
+[2018.07.19-07.37.40:354][611]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DestructableObject_TileSetB4E18E53405AE83E9BF05EAA9C1F4E5C.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject_TileSet.uasset'
+[2018.07.19-07.37.40:355][611]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/DestructableObject_TileSet.uasset
+[2018.07.19-07.37.40:364][611]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Colors/BaseColors/Walls_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls_TileSet.uasset" SILENT=true
+[2018.07.19-07.37.40:367][611]LogSavePackage: Save=2.55ms
+[2018.07.19-07.37.40:367][611]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Walls_TileSetBC52DA68406BE481E17D9CBA1B91AD2E.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls_TileSet.uasset'
+[2018.07.19-07.37.40:368][611]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Colors/BaseColors/Walls_TileSet.uasset
+[2018.07.19-07.37.46:811][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileSets/DestructableObject_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/DestructableObject_TileSet.uasset" SILENT=true
+[2018.07.19-07.37.46:815][358]LogSavePackage: Save=2.67ms
+[2018.07.19-07.37.46:815][358]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DestructableObject_TileSet83B2E74A40C80FC0C44686B5E7F6C5D3.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/DestructableObject_TileSet.uasset'
+[2018.07.19-07.37.46:815][358]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/DestructableObject_TileSet.uasset
+[2018.07.19-07.37.46:827][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileSets/Base_Ground_Color_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Base_Ground_Color_TileSet.uasset" SILENT=true
+[2018.07.19-07.37.46:832][358]LogSavePackage: Save=2.82ms
+[2018.07.19-07.37.46:832][358]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_Ground_Color_TileSet63027F6A40FB6116E2D6A59A218BC7FC.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Base_Ground_Color_TileSet.uasset'
+[2018.07.19-07.37.46:832][358]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Base_Ground_Color_TileSet.uasset
+[2018.07.19-07.37.46:843][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileSets/Base_House_Floor_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Base_House_Floor_TileSet.uasset" SILENT=true
+[2018.07.19-07.37.46:847][358]LogSavePackage: Save=2.72ms
+[2018.07.19-07.37.46:847][358]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_House_Floor_TileSet8EC19BF74BF84B02783F97A501EA81C0.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Base_House_Floor_TileSet.uasset'
+[2018.07.19-07.37.46:847][358]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Base_House_Floor_TileSet.uasset
+[2018.07.19-07.37.46:858][358]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileSets/Walls_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Walls_TileSet.uasset" SILENT=true
+[2018.07.19-07.37.46:861][358]LogSavePackage: Save=2.70ms
+[2018.07.19-07.37.46:861][358]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Walls_TileSet954661EB4D3097BC356A55B6F33C8BB5.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Walls_TileSet.uasset'
+[2018.07.19-07.37.46:862][358]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Walls_TileSet.uasset
+[2018.07.19-07.38.28:006][383]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.38.28:104][393]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileSets/Walls_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Walls_TileSet.uasset" SILENT=true
+[2018.07.19-07.38.28:109][393]LogSavePackage: Save=2.95ms
+[2018.07.19-07.38.28:109][393]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Walls_TileSetE650BA524676CBCA8EAAB6958FE40A42.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Walls_TileSet.uasset'
+[2018.07.19-07.38.28:110][393]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/Walls_TileSet.uasset
+[2018.07.19-07.38.28:866][483]LogSlate: Window 'Walls_TileSet' being destroyed
+[2018.07.19-07.38.35:818][289]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.38.43:296][183]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.38.50:567][ 48]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileSets/DestructableObject_TileSet" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/DestructableObject_TileSet.uasset" SILENT=true
+[2018.07.19-07.38.50:572][ 48]LogSavePackage: Save=2.88ms
+[2018.07.19-07.38.50:572][ 48]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DestructableObject_TileSetBE743B844206938543E3F4BF09E77CEB.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/DestructableObject_TileSet.uasset'
+[2018.07.19-07.38.50:573][ 48]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileSets/DestructableObject_TileSet.uasset
+[2018.07.19-07.38.51:466][154]LogSlate: Window 'DestructableObject_TileSet' being destroyed
+[2018.07.19-07.38.53:479][381]LogContentBrowser: Native class hierarchy updated for 'TextureEditor' in 0.0002 seconds. Added 1 classes and 2 folders.
+[2018.07.19-07.39.01:381][300]LogSlate: Window 'DestructableObject' being destroyed
+[2018.07.19-07.39.49:051][975]LogSavePackage: Save=2.80ms
+[2018.07.19-07.39.49:051][975]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Walls_TileSetF7ACC8AB45EDC85C73B82F84DBB9E78A.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/Walls_TileSet.uasset'
+[2018.07.19-07.39.49:052][975]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/Walls_TileSet.uasset
+[2018.07.19-07.39.49:078][975]LogSavePackage: Save=15.44ms
+[2018.07.19-07.39.49:078][975]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DestructableObject_TileSet57FD136E40B5AEABE011C9ACF57D77CE.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/DestructableObject_TileSet.uasset'
+[2018.07.19-07.39.49:079][975]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/DestructableObject_TileSet.uasset
+[2018.07.19-07.39.49:093][975]LogSavePackage: Save=2.92ms
+[2018.07.19-07.39.49:093][975]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_House_Floor_TileSet861772E94AC7E89969FA17A6A161CC0B.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/Base_House_Floor_TileSet.uasset'
+[2018.07.19-07.39.49:093][975]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/Base_House_Floor_TileSet.uasset
+[2018.07.19-07.39.49:108][975]LogSavePackage: Save=2.99ms
+[2018.07.19-07.39.49:108][975]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Base_Ground_Color_TileSetEF11101F4668DA1EF8FD0891F6772360.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/Base_Ground_Color_TileSet.uasset'
+[2018.07.19-07.39.49:109][975]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/TileSets/Base_Ground_Color_TileSet.uasset
+[2018.07.19-07.40.17:588][225]LogSlate: Window 'BaseLevel*' being destroyed
+[2018.07.19-07.40.55:945][803]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-07.40.55:947][803]LogSavePackage: Save=1.16ms
+[2018.07.19-07.40.55:947][803]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevelD1419D8F4CE3A58627E006A0540B7431.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-07.40.55:948][803]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-07.41.01:320][446]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.41.09:927][477]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.41.15:024][ 87]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.41.15:107][ 96]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-07.41.15:112][ 96]LogSavePackage: Save=3.78ms
+[2018.07.19-07.41.15:112][ 96]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel49298DC24B6E66810D59BBB75ADEDA26.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-07.41.15:113][ 96]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-07.42.33:917][537]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.42.43:639][700]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.42.46:402][ 31]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.42.57:027][304]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.43.04:149][153]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.43.14:257][365]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.43.14:357][376]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-07.43.14:363][376]LogSavePackage: Save=4.44ms
+[2018.07.19-07.43.14:363][376]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevelE5A851C54B1F4228CDA4F8B9FB713B61.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-07.43.14:364][376]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-07.43.29:024][135]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.43.42:867][795]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.43.47:066][294]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.43.51:317][803]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.43.53:662][ 83]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.43.56:897][469]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.44.05:137][457]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.44.09:968][ 35]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.44.18:057][  4]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.44.18:865][101]Cmd: TRANSACTION UNDO
+[2018.07.19-07.44.18:865][101]LogEditorTransaction: Undo Delete Layer
+[2018.07.19-07.44.35:150][ 50]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.44.44:812][205]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.45.00:560][ 94]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.45.43:731][273]Cmd: TRANSACTION UNDO
+[2018.07.19-07.45.43:731][273]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.46.12:860][766]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.46.12:969][778]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-07.46.12:990][778]LogSavePackage: Save=19.52ms
+[2018.07.19-07.46.12:990][778]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel88FA1A154B81EA6E3409D3BE193B12BA.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-07.46.12:991][778]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-07.46.14:308][936]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.46.30:392][817]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.46.42:081][207]LogEditorViewport: Clicking Background
+[2018.07.19-07.46.43:615][390]LogEditorViewport: Clicking Background
+[2018.07.19-07.46.44:036][440]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (BaseLevel)
+[2018.07.19-07.46.45:523][607]LogSlate: Took 0.010502 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2018.07.19-07.46.47:574][844]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.47.04:255][832]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.47.04:407][847]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/DefaultLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.19-07.47.04:422][847]LogSavePackage: Save=3.43ms
+[2018.07.19-07.47.04:423][847]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DefaultLevelE373477841B149BBC5E3F49371E2F3E3.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap'
+[2018.07.19-07.47.04:423][847]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap
+[2018.07.19-07.47.07:166][171]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.47.42:405][277]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.47.54:921][671]LogEditorViewport: Clicking on Actor (LMB): Actor (Actor)
+[2018.07.19-07.47.55:261][706]Cmd: DELETE
+[2018.07.19-07.47.55:262][706]Cmd: ACTOR DELETE
+[2018.07.19-07.47.55:467][706]LogEditorActor: Deleted Actor: Actor
+[2018.07.19-07.47.55:505][706]LogEditorActor: Deleted 1 Actors (0.040 secs)
+[2018.07.19-07.47.56:048][768]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.47.58:478][ 59]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (BaseLevel)
+[2018.07.19-07.48.02:239][499]LogEditorViewport: Clicking Background
+[2018.07.19-07.48.03:430][641]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (BaseLevel)
+[2018.07.19-07.48.13:634][860]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.48.27:885][563]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (BaseLevel)
+[2018.07.19-07.48.28:296][611]LogEditorViewport: Clicking Background
+[2018.07.19-07.48.32:762][146]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.49.01:013][486]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.49.47:703][538]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.00:936][110]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.03:691][439]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.05:361][439]LogSlate: Window 'Save Asset As' being destroyed
+[2018.07.19-07.50.10:500][ 55]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.13:167][375]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.15:316][633]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.50.16:177][735]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/DefaultLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.19-07.50.16:190][735]LogSavePackage: Save=3.56ms
+[2018.07.19-07.50.16:190][735]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DefaultLevelB61A73024159C111F4EDAA9D8EE3A86B.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap'
+[2018.07.19-07.50.16:191][735]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap
+[2018.07.19-07.50.21:696][361]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-07.50.21:710][361]LogSavePackage: Save=12.29ms
+[2018.07.19-07.50.21:710][361]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevelF74BB7B54933E6370D23B5B76055DD65.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-07.50.21:710][361]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-07.50.34:863][928]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.36:983][176]LogEditorViewport: Clicking Background
+[2018.07.19-07.50.45:808][228]LogEditorViewport: Clicking on Actor (LMB): PaperTileMapActor (BaseLevel)
+[2018.07.19-07.50.47:124][380]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.50.50:420][774]LogEditorViewport: Clicking Background
+[2018.07.19-07.50.53:049][ 88]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.50.55:099][331]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.58:414][724]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.50.59:756][885]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.51.02:820][243]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/DefaultLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.19-07.51.02:833][243]LogSavePackage: Save=3.16ms
+[2018.07.19-07.51.02:833][243]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/DefaultLevel091B6C964B97E260E6FEA890A30D2A03.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap'
+[2018.07.19-07.51.02:833][243]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/Maps/DefaultLevel.umap
+[2018.07.19-07.51.02:845][243]LogFileHelpers: Saving map 'DefaultLevel' took 0.057
+[2018.07.19-07.51.04:278][414]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.51.24:005][777]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.52.01:016][205]Cmd: TRANSACTION UNDO
+[2018.07.19-07.52.01:016][205]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.52.08:457][ 96]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.52.14:749][849]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.52.22:937][832]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.52.27:113][329]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.52.49:709][ 32]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.53.30:440][908]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.53.40:424][106]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.53.49:629][210]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.54.17:868][572]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.54.24:861][409]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-07.54.31:147][162]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.55.11:946][570]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.55.15:867][ 40]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.57.37:221][527]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.57.39:819][839]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.57.46:359][616]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.58.01:047][376]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.58.12:469][742]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.58.23:028][  5]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.23:028][  5]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.23:838][101]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.23:838][101]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.24:232][148]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.24:232][148]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.24:475][177]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.24:475][177]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.24:707][205]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.24:707][205]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.24:919][230]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.24:919][230]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.25:336][280]Cmd: TRANSACTION UNDO
+[2018.07.19-07.58.25:336][280]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.58.50:299][274]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-07.59.13:101][999]Cmd: TRANSACTION UNDO
+[2018.07.19-07.59.13:101][999]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-07.59.56:638][217]Cmd: TRANSACTION UNDO
+[2018.07.19-07.59.56:638][217]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.05:555][286]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.05:555][286]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.30:554][276]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.30:554][276]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.30:802][305]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.30:802][305]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.30:974][325]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.30:974][325]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.31:155][346]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.31:155][346]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.31:313][364]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.31:314][364]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.32:155][464]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.32:155][464]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.32:347][487]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.32:347][487]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.32:539][510]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.32:539][510]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.32:713][531]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.32:713][531]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.32:905][554]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.32:905][554]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.33:097][577]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.33:097][577]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.33:275][598]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.33:275][598]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.33:441][618]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.33:441][618]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.33:616][639]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.33:616][639]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.33:791][660]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.33:791][660]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.33:974][682]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.33:974][682]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.34:141][702]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.34:141][702]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.34:320][723]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.34:320][723]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.34:515][746]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.34:515][746]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.34:703][768]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.34:703][768]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.34:904][792]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.34:904][792]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.35:103][816]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.35:103][816]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.35:282][837]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.35:282][837]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.35:454][857]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.35:454][857]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.35:637][879]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.35:637][879]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.35:857][905]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.35:857][905]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.42:790][735]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.42:790][735]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.42:999][759]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.42:999][759]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.43:188][781]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.43:188][781]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.43:394][805]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.43:394][805]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.44:102][890]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.44:102][890]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.44:311][915]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.44:311][915]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.44:514][939]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.44:514][939]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.44:873][982]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.44:873][982]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.00.45:667][ 77]Cmd: TRANSACTION UNDO
+[2018.07.19-08.00.45:667][ 77]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.02.17:838][132]Cmd: TRANSACTION UNDO
+[2018.07.19-08.02.17:838][132]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.02.40:450][844]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.02.47:808][719]LogEditorViewport: Clicking Background
+[2018.07.19-08.02.48:061][748]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.02.59:974][160]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.03.03:342][563]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.03.24:121][ 53]Cmd: TRANSACTION UNDO
+[2018.07.19-08.03.24:121][ 53]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.03.53:008][516]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.04.01:117][480]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.04.04:095][835]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.04.10:890][645]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.04.13:263][929]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.04.33:196][319]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.33:196][319]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.48:188][113]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.48:188][113]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.48:462][145]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.48:462][145]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.48:751][179]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.48:751][179]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.48:993][208]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.48:993][208]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.49:202][233]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.49:202][233]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.49:493][268]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.49:493][268]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.49:729][296]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.49:729][296]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.49:971][325]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.49:971][325]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.50:204][353]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.50:204][353]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.50:429][380]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.50:430][380]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.50:658][407]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.50:658][407]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.50:917][438]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.50:917][438]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.51:299][484]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.51:299][484]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.51:583][518]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.51:583][518]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.51:970][564]Cmd: TRANSACTION UNDO
+[2018.07.19-08.04.51:970][564]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.04.52:807][664]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.05.11:970][959]Cmd: TRANSACTION UNDO
+[2018.07.19-08.05.11:970][959]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.05.16:319][480]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.05.21:631][110]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.05.23:759][364]LogEditorViewport: Clicking Background
+[2018.07.19-08.05.24:405][440]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.05.30:002][110]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.05.49:696][462]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.05.49:808][462]LogSavePackage: Save=110.00ms
+[2018.07.19-08.05.49:808][462]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel4A37FA8C42B505644DD04DA517FE08BB.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.05.49:810][462]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.05.55:479][137]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.05.58:130][453]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.06.01:857][894]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.06.07:931][623]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.06.13:716][317]Cmd: TRANSACTION UNDO
+[2018.07.19-08.06.13:716][317]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.06.13:898][338]Cmd: TRANSACTION UNDO
+[2018.07.19-08.06.13:898][338]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.06.14:136][366]Cmd: TRANSACTION UNDO
+[2018.07.19-08.06.14:136][366]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.06.42:104][719]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.06.45:278][100]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.06.59:758][836]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.07.01:192][  8]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.07.43:836][121]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.07.43:862][121]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/DefaultLevel' took 0.009
+[2018.07.19-08.07.43:864][121]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TileMaps_and_Tilestes/BaseLevel] ([1] browsable assets)...
+[2018.07.19-08.07.43:864][121]OBJ SavePackage: Finished generating thumbnails for package [/Game/TileMaps_and_Tilestes/BaseLevel]
+[2018.07.19-08.07.43:968][121]LogSavePackage: Save=102.19ms
+[2018.07.19-08.07.43:968][121]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel_Auto10E246507467D2FDC1D14D38BE9722F76.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Autosaves/Game/TileMaps_and_Tilestes/BaseLevel_Auto1.uasset'
+[2018.07.19-08.07.43:968][121]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/Autosaves/Game/TileMaps_and_Tilestes/BaseLevel_Auto1.uasset
+[2018.07.19-08.07.43:968][121]LogFileHelpers: Auto-saving content packages took 0.105
+[2018.07.19-08.08.16:897][ 66]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.08.28:205][414]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.08.32:980][858]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.08.33:115][858]LogSavePackage: Save=134.09ms
+[2018.07.19-08.08.33:115][858]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevelE8E86B1C4D383B71ED711DAC686FCE2D.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.08.33:117][858]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.08.44:851][259]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.08.47:816][614]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.09.00:259][106]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.09.02:842][416]Cmd: TRANSACTION UNDO
+[2018.07.19-08.09.02:842][416]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.09.03:181][456]Cmd: TRANSACTION UNDO
+[2018.07.19-08.09.03:181][456]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.09.03:805][530]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.09.06:433][844]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.09.08:349][ 73]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.09.39:735][837]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.09.47:643][782]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.09.48:494][883]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.09.48:587][883]LogSavePackage: Save=91.61ms
+[2018.07.19-08.09.48:587][883]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel9898B086489CD4E6AFDBBC841222BB77.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.09.48:588][883]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.09.55:933][759]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.09.59:417][174]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.10.09:190][309]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.13.42:508][ 55]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.13.43:307][150]LogEditorViewport: Clicking Background
+[2018.07.19-08.13.43:893][219]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.13.46:640][543]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.13.59:260][ 43]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.14.03:270][522]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.14.04:799][705]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.14.09:612][279]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.15.13:028][641]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.07.19-08.15.13:028][641]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.07.19-08.15.23:208][855]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.15.45:940][833]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.16.04:323][836]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.16.07:399][ 47]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.16.10:565][270]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.16.13:239][512]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.16.16:926][953]Cmd: TRANSACTION UNDO
+[2018.07.19-08.16.16:926][953]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.16.19:577][270]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.16.25:369][965]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.16.33:906][985]Cmd: TRANSACTION UNDO
+[2018.07.19-08.16.33:906][985]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.16.35:934][227]Cmd: TRANSACTION UNDO
+[2018.07.19-08.16.35:934][227]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.16.38:432][526]Cmd: TRANSACTION UNDO
+[2018.07.19-08.16.38:432][526]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.16.39:062][601]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.16.42:810][ 49]Cmd: TRANSACTION UNDO
+[2018.07.19-08.16.42:810][ 49]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.16.59:993][598]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.17.04:992][195]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.04:992][195]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.09:408][721]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.09:408][721]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.16:212][536]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.17.30:035][190]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.30:035][190]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.30:554][251]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.30:554][251]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.30:768][276]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.30:768][276]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.30:941][296]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.30:941][296]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.31:110][316]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.31:110][316]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.31:280][336]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.31:280][336]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.31:442][355]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.31:442][355]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.31:796][397]Cmd: TRANSACTION UNDO
+[2018.07.19-08.17.31:796][397]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.17.54:160][798]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.18.04:461][ 34]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.18.12:719][ 25]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.18.44:067][782]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.18.44:167][793]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.18.44:284][793]LogSavePackage: Save=99.97ms
+[2018.07.19-08.18.44:284][793]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel1EFD5D304A22872BE1F9ACB55E01B757.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.18.44:285][793]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.19.50:530][171]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.19.50:536][171]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.07.19-08.19.50:536][171]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2018.07.19-08.20.27:192][552]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.20.29:983][880]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.20.31:303][ 38]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.20.40:536][145]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.20.41:533][264]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.20.44:006][560]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.20.45:407][728]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.20.52:417][569]Cmd: TRANSACTION UNDO
+[2018.07.19-08.20.52:417][569]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.21.23:467][281]Cmd: TRANSACTION UNDO
+[2018.07.19-08.21.23:467][281]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.21.24:711][429]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.21.37:914][ 10]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.21.46:752][ 68]Cmd: TRANSACTION UNDO
+[2018.07.19-08.21.46:752][ 68]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.21.47:797][192]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.05:531][315]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.08:076][619]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.10:952][964]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.21:995][289]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.24:965][643]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.26:566][831]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.31:325][402]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.36:484][ 16]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.22.42:220][703]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.22.45:632][112]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.22.49:764][607]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.22.52:601][947]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.23.22:801][559]Cmd: TRANSACTION UNDO
+[2018.07.19-08.23.22:801][559]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.23.30:059][428]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.23.47:241][457]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.23.50:486][843]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.23.57:880][727]Cmd: TRANSACTION UNDO
+[2018.07.19-08.23.57:880][727]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.24.16:860][  2]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.24.20:897][481]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.24.45:032][358]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.05:011][721]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.09:371][238]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.25.11:817][531]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.19:525][452]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.25.22:121][763]Cmd: TRANSACTION UNDO
+[2018.07.19-08.25.22:121][763]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.25.22:514][809]Cmd: TRANSACTION UNDO
+[2018.07.19-08.25.22:514][809]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.25.22:950][860]Cmd: TRANSACTION UNDO
+[2018.07.19-08.25.22:950][860]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.25.23:934][977]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.33:907][171]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.36:914][532]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.47:465][798]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.25.51:389][265]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.26.42:009][327]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.26.43:601][518]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.26.50:033][284]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.26.51:475][457]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.26.54:774][851]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.26.56:808][ 95]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.27.32:578][383]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.27.35:845][775]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.28.23:012][407]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.28.25:461][701]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.28.27:930][995]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.28.33:163][620]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.28.34:450][774]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.28.47:461][332]Cmd: TRANSACTION UNDO
+[2018.07.19-08.28.47:461][332]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.28.47:697][359]Cmd: TRANSACTION UNDO
+[2018.07.19-08.28.47:697][359]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.28.56:901][458]Cmd: TRANSACTION UNDO
+[2018.07.19-08.28.56:901][458]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.29.03:930][300]Cmd: TRANSACTION UNDO
+[2018.07.19-08.29.03:930][300]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.29.04:460][363]Cmd: TRANSACTION UNDO
+[2018.07.19-08.29.04:460][363]LogEditorTransaction: Undo Tile Erasing
+[2018.07.19-08.29.04:977][424]Cmd: TRANSACTION UNDO
+[2018.07.19-08.29.04:977][424]LogEditorTransaction: Undo Tile Erasing
+[2018.07.19-08.29.05:377][471]Cmd: TRANSACTION UNDO
+[2018.07.19-08.29.05:377][471]LogEditorTransaction: Undo Tile Erasing
+[2018.07.19-08.29.05:918][535]Cmd: TRANSACTION UNDO
+[2018.07.19-08.29.05:918][535]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.29.06:517][606]Cmd: TRANSACTION UNDO
+[2018.07.19-08.29.06:517][606]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.29.17:706][947]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.29.26:761][ 21]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.26:761][ 21]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.29.27:106][ 62]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.27:106][ 62]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.29.27:323][ 88]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.27:323][ 88]LogEditorTransaction: Redo Tile Erasing
+[2018.07.19-08.29.27:582][119]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.27:582][119]LogEditorTransaction: Redo Tile Erasing
+[2018.07.19-08.29.27:816][147]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.27:816][147]LogEditorTransaction: Redo Tile Erasing
+[2018.07.19-08.29.28:057][176]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.28:058][176]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.29.28:308][206]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.28:308][206]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.29.28:566][237]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.28:566][237]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.29.28:816][267]Cmd: TRANSACTION REDO
+[2018.07.19-08.29.28:816][267]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.29.34:903][996]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.30.11:749][403]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.30.23:645][829]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.30.28:320][389]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.30.30:716][676]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.30.37:534][489]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.30.38:754][635]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.31.24:613][111]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.31.35:721][434]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.31.41:064][ 75]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.31.46:055][670]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.32.00:727][426]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.32.01:849][560]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.32.09:108][431]Cmd: TRANSACTION UNDO
+[2018.07.19-08.32.09:108][431]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.32.11:247][686]Cmd: TRANSACTION UNDO
+[2018.07.19-08.32.11:247][686]LogEditorTransaction: Undo Tile Painting
+[2018.07.19-08.32.13:775][988]Cmd: TRANSACTION REDO
+[2018.07.19-08.32.13:775][988]LogEditorTransaction: Redo Tile Painting
+[2018.07.19-08.32.15:367][177]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.32.20:377][778]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.32.23:860][190]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.32.28:797][779]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.32.29:953][916]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.32.29:957][916]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.32.30:074][916]LogSavePackage: Save=115.08ms
+[2018.07.19-08.32.30:074][916]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel096EB5564D8DA2BF86FDDD8A1127AB4A.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.32.30:076][916]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.32.33:147][279]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.32.49:982][282]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.33.27:547][774]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.33.32:748][398]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.33.40:118][280]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.33.46:506][ 41]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.33.48:940][333]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.34.35:254][877]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.34.50:874][747]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.35.06:348][604]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.35.08:456][857]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.35.08:600][873]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.35.08:697][873]LogSavePackage: Save=95.53ms
+[2018.07.19-08.35.08:697][873]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel44DE438247F45B2B7EA415938A0D278E.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.35.08:698][873]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.35.31:631][623]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.35.33:495][846]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.36.51:716][173]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.36.55:002][556]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.36.57:322][834]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.37.20:474][611]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.37.23:502][974]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.37.34:757][319]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.37.38:851][809]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.38.02:953][686]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.38.04:125][825]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.38.04:130][825]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.38.04:227][825]LogSavePackage: Save=95.56ms
+[2018.07.19-08.38.04:227][825]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevelBB661B09412AE3E52E755A86E37ED8B5.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.38.04:228][825]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.38.04:637][874]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.39.07:805][205]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.39.14:938][ 42]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.39.37:098][697]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.39.40:591][116]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.39.43:799][501]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.39.50:499][305]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.40.38:149][  6]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.40.40:948][328]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.40.41:044][328]LogSavePackage: Save=94.48ms
+[2018.07.19-08.40.41:044][328]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel1979B27542A8FB6FEE2967A661C85FF2.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.40.41:045][328]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.40.53:293][791]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.41.03:608][  7]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.41.05:154][192]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.41.59:476][667]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.42.01:114][857]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.42.04:267][232]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.42.05:638][396]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.42.09:177][814]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.42.11:406][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.42.11:502][ 70]LogSavePackage: Save=94.08ms
+[2018.07.19-08.42.11:502][ 70]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel0454D3DE4AD8E9D0E4A5FE823B3B1607.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.42.11:503][ 70]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.42.48:666][490]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.43.34:311][931]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.43.35:670][ 88]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.43.45:721][294]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.43.48:916][669]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.43.55:715][475]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.43.56:850][604]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.44.47:581][677]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.45.05:036][763]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.45.06:157][897]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.45.06:504][938]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.45.09:305][261]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.45.09:403][261]LogSavePackage: Save=95.81ms
+[2018.07.19-08.45.09:404][261]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel14C7B402461FE29F873849966DF7C716.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.45.09:404][261]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.45.17:343][207]LogSlate: FSceneViewport::OnFocusLost() reason 0
+[2018.07.19-08.45.27:981][462]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.45.29:269][615]LogSlate: FSceneViewport::OnFocusLost() reason 2
+[2018.07.19-08.45.29:273][615]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TileMaps_and_Tilestes/BaseLevel" FILE="../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset" SILENT=true
+[2018.07.19-08.45.29:369][615]LogSavePackage: Save=94.82ms
+[2018.07.19-08.45.29:370][615]LogSavePackage: Moving '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Saved/BaseLevel8E353681431C4C78256530BBCDA31D9C.tmp' to '../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset'
+[2018.07.19-08.45.29:371][615]LogSavePackage: Display: Finished SavePackage ../../../../../UEstaff/HuioMoio2d/HuioMoioProject/Content/TileMaps_and_Tilestes/BaseLevel.uasset
+[2018.07.19-08.45.30:130][706]LogSlate: FSceneViewport::OnFocusLost() reason 0
